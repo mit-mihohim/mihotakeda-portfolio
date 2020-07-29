@@ -174,27 +174,13 @@
 
 .wrapper .content .about__profile {
   height: calc(100vh - 28px * 2);
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 30px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  text-align: center;
 }
 
 .wrapper .content .about__profile img {
-  width: 50%;
   width: 180px;
   border-radius: 50%;
-}
-
-.wrapper .content .about__profile .description {
-  text-align: center;
-  width: 50%;
 }
 
 .wrapper .content .about__profile .description h1 {
@@ -233,54 +219,20 @@
   color: #fff;
 }
 
-.wrapper .content .about__profile .description .about-lists .list:hover {
-  cursor: pointer;
-  border: 1px solid #fcc1fc;
-  background-color: #fff;
-}
-
-.wrapper .content .about__profile .description .about-lists .list:hover a {
-  color: #fcc1fc;
-}
-
 .wrapper .content .about__profile .description .about-lists .list--why {
   background-color: #e0f581;
-}
-
-.wrapper .content .about__profile .description .about-lists .list--why:hover {
-  border: 1px solid #e0f581;
-}
-
-.wrapper .content .about__profile .description .about-lists .list--why:hover a {
-  color: #e0f581;
 }
 
 .wrapper .content .about__profile .description .about-lists .list--now {
   background-color: #94e6ff;
 }
 
-.wrapper .content .about__profile .description .about-lists .list--now:hover {
-  border: 1px solid #94e6ff;
-}
-
-.wrapper .content .about__profile .description .about-lists .list--now:hover a {
-  color: #94e6ff;
-}
-
 .wrapper .content .about__info {
-  height: calc(100vh - 28px * 2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-bottom: 100px;
 }
 
 .wrapper .content .about__info .sub-title {
+  margin: 0 auto;
   line-height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -291,7 +243,6 @@
 }
 
 .wrapper .content .about__info .description {
-  width: 50%;
   line-height: 3;
 }
 
@@ -302,16 +253,11 @@
 
 .wrapper .content .about__info--who {
   background-image: url(../img/works/mihohim-fashion-photo.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
   background-color: rgba(255, 255, 255, 0.589);
   background-blend-mode: lighten;
-}
-
-.wrapper .content .about__info--why {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
 }
 
 .wrapper .content .about__info--why .sub-title {
@@ -579,6 +525,77 @@ footer {
   }
   .content__header {
     text-align: center;
+  }
+  .content .about__profile {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .content .about__profile img {
+    width: 50%;
+    border-radius: 50%;
+  }
+  .content .about__profile .description {
+    text-align: center;
+    width: 50%;
+  }
+  .content .about__profile .description .about-lists .list:hover {
+    cursor: pointer;
+    border: 1px solid #fcc1fc;
+    background-color: #fff;
+  }
+  .content .about__profile .description .about-lists .list:hover a {
+    color: #fcc1fc;
+  }
+  .content .about__profile .description .about-lists .list--why {
+    background-color: #e0f581;
+  }
+  .content .about__profile .description .about-lists .list--why:hover {
+    border: 1px solid #e0f581;
+  }
+  .content .about__profile .description .about-lists .list--why:hover a {
+    color: #e0f581;
+  }
+  .content .about__profile .description .about-lists .list--now {
+    background-color: #94e6ff;
+  }
+  .content .about__profile .description .about-lists .list--now:hover {
+    border: 1px solid #94e6ff;
+  }
+  .content .about__profile .description .about-lists .list--now:hover a {
+    color: #94e6ff;
+  }
+  .content .about__info {
+    height: calc(100vh - 28px * 2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .content .about__info .description {
+    width: 50%;
+    padding: 38px;
+  }
+  .content .about__info--who {
+    background-size: cover !important;
+  }
+  .content .about__info--why {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   .content .projects .project {
     height: 100vh;

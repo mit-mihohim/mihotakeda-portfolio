@@ -145,19 +145,13 @@
     .about {
       &__profile {
         height: calc(100vh - 28px * 2);
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
         margin-bottom: 30px;
-        justify-content: space-around;
+        text-align: center;
         img {
-          width: 50%;
           width: 180px;
           border-radius: 50%;
         }
         .description {
-          text-align: center;
-          width: 50%;
           h1 {
             font-size: 3em;
             line-height: 2;
@@ -184,43 +178,20 @@
                 font-size: 18px;
                 color: #fff;
               }
-              &:hover {
-                cursor: pointer;
-                border: 1px solid #fcc1fc;
-                background-color: #fff;
-                a {
-                  color: #fcc1fc;
-                }
-              }
               &--why {
                 background-color: #e0f581;
-                &:hover {
-                  border: 1px solid #e0f581;
-                  a {
-                    color: #e0f581;
-                  }
-                }
               }
               &--now {
                 background-color: #94e6ff;
-                &:hover {
-                  border: 1px solid #94e6ff;
-                  a {
-                    color: #94e6ff;
-                  }
-                }
               }
             }
           }
         }
       }
       &__info {
-        height: calc(100vh - 28px * 2);
-        display: flex;
-        margin: 0 auto;
-        justify-content: space-around;
-        align-items: center;
+        margin-bottom: 100px;
         .sub-title {
+          margin: 0 auto;
           line-height: 150px;
           width: 150px;
           border-radius: 50%;
@@ -230,7 +201,6 @@
           color: #fff;
         }
         .description {
-          width: 50%;
           line-height: 3;
           span {
             font-size: 1.5em;
@@ -239,12 +209,13 @@
         }
         &--who {
           background-image: url(../img/works/mihohim-fashion-photo.jpg);
-          background-size: cover;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: bottom;
           background-color:rgba(255, 255, 255, 0.589);
           background-blend-mode:lighten;
         }
         &--why {
-          flex-direction: row-reverse;
           .sub-title {
             background-color: #e0f581;
           }
@@ -479,6 +450,70 @@ footer {
     padding: 0 10px !important;
     &__header {
       text-align: center;
+    }
+    .about {
+      &__profile {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        justify-content: space-around;
+        img {
+          width: 50%;
+          border-radius: 50%;
+        }
+        .description {
+          text-align: center;
+          width: 50%;
+          .about-lists {
+            .list {
+              &:hover {
+                cursor: pointer;
+                border: 1px solid #fcc1fc;
+                background-color: #fff;
+                a {
+                  color: #fcc1fc;
+                }
+              }
+              &--why {
+                background-color: #e0f581;
+                &:hover {
+                  border: 1px solid #e0f581;
+                  a {
+                    color: #e0f581;
+                  }
+                }
+              }
+              &--now {
+                background-color: #94e6ff;
+                &:hover {
+                  border: 1px solid #94e6ff;
+                  a {
+                    color: #94e6ff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &__info {
+        height: calc(100vh - 28px * 2);
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-around;
+        align-items: center;
+        .description {
+          width: 50%;
+          padding: 38px;
+        }
+        &--who {
+          background-size: cover !important;
+        }
+        &--why {
+          flex-direction: row-reverse;
+        }
+      }
     }
     .projects {
       .project {
